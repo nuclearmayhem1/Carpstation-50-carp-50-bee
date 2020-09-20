@@ -545,8 +545,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			organic host as a home base and source of fuel. Holoparasites come in various types and share damage with their host."
 	item = /obj/item/guardiancreator/tech
 	cost = 18
-	surplus = 10
-	surplus_nullcrates = 0
+	surplus = 20
+	surplus_nullcrates = 20
 	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
 	player_minimum = 25
 	restricted = TRUE
@@ -1820,7 +1820,7 @@ datum/uplink_item/stealthy_tools/taeclowndo_shoes
 	cost = 11
 	item = /obj/item/pneumatic_cannon/pie/selfcharge
 	restricted_roles = list("Clown")
-	surplus = 0 //No fun unless you're the clown!
+	surplus = 20 //it's better than his grace
 
 /datum/uplink_item/role_restricted/blastcannon
 	name = "Blast Cannon"
@@ -1914,6 +1914,7 @@ datum/uplink_item/stealthy_tools/taeclowndo_shoes
 			Premium features can be unlocked with a cryptographic sequencer!"
 	item = /obj/vehicle/sealed/car/clowncar
 	cost = 20
+	surplus = 20
 	restricted_roles = list("Clown")
 	exclude_modes = list(/datum/game_mode/incursion)
 
@@ -1948,6 +1949,7 @@ datum/uplink_item/role_restricted/superior_honkrender
 			Only one can fit on a mecha."
 	item = /obj/item/mecha_parts/concealed_weapon_bay
 	cost = 3
+	surplus = 40
 	restricted_roles = list("Roboticist", "Research Director")
 
 /datum/uplink_item/role_restricted/haunted_magic_eightball
@@ -1968,13 +1970,14 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/his_grace
 	cost = 20
 	restricted_roles = list("Chaplain")
-	surplus = 5 //Very low chance to get it in a surplus crate even without being the chaplain
+	surplus = 0 //sorry you're out of lucky
 
 /datum/uplink_item/role_restricted/cultconstructkit
 	name = "Cult Construct Kit"
 	desc = "Recovered from an abandoned Nar'sie cult lair two construct shells and a stash of empty soulstones was found. These were purified to prevent occult contamination and have been put in a belt so they may be used as an accessible source of disposable minions. The construct shells have been packaged into two beacons for rapid and portable deployment."
 	item = /obj/item/storage/box/syndie_kit/cultconstructkit
 	cost = 20
+	surplus = 40
 	restricted_roles = list("Chaplain")
 
 /datum/uplink_item/role_restricted/spanish_flu
@@ -2032,7 +2035,7 @@ datum/uplink_item/role_restricted/superior_honkrender
 			to act as a servent and guardian to their host."
 	item = /obj/item/guardiancreator/carp
 	cost = 18
-	surplus = 5
+	surplus = 20
 	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
 	player_minimum = 25
 	restricted = TRUE
@@ -2162,6 +2165,7 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/reagent_containers/food/drinks/syndicatebeer
 	cost = 4
 	illegal_tech = FALSE
+	surplus = 40
 
 /datum/uplink_item/badass/syndiecash
 	name = "Syndicate Briefcase Full of Cash"
@@ -2187,3 +2191,4 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/storage/fancy/cigarettes/cigpack_syndicate
 	cost = 2
 	illegal_tech = FALSE
+	surplus = 40
